@@ -1,15 +1,160 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f0f4f8;
-    text-align: center;
-    padding: 50px;
+/* Configuración general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-h1 { color: #2563eb; }
-button {
-    padding: 12px 20px;
-    background: #2563eb;
+ 
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+ 
+    background-color: #eaf0f6;
+    font-family: Arial, sans-serif;
+    color: #243247;
+}
+ 
+/* Tarjeta principal */
+.tarjeta {
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+ 
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+ 
+/* Encabezado */
+.encabezado {
+    background-color: #17365d;
     color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+ 
+.icono {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+ 
+    width: 75px;
+    height: 75px;
+    margin-bottom: 15px;
+ 
+    background-color: white;
+    color: #17365d;
+    border-radius: 50%;
+ 
+    font-size: 25px;
+    font-weight: bold;
+}
+ 
+.encabezado h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+ 
+.profesion {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+ 
+.cargo {
+    color: #dceaf7;
+    font-size: 14px;
+}
+ 
+/* Presentación */
+.presentacion {
+    margin-bottom: 25px;
+}
+ 
+h2 {
+    color: #17365d;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+ 
+.presentacion p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+}
+ 
+/* Habilidades */
+.habilidades {
+    margin-bottom: 25px;
+    text-align: left;
+}
+ 
+.habilidades ul {
+    padding-left: 22px;
+}
+ 
+.habilidades li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+ 
+/* Botón */
+button {
+    width: 100%;
+    padding: 14px;
+ 
+    background-color: #245a81;
+    color: white;
+ 
     border: none;
     border-radius: 8px;
+ 
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+button:hover {
+    background-color: #17365d;
+}
+ 
+/* Mensaje interactivo */
+.mensaje {
+    margin-top: 18px;
+    padding: 15px;
+ 
+    background-color: #eaf2f8;
+    border-left: 4px solid #245a81;
+    border-radius: 6px;
+ 
+    line-height: 1.6;
+}
+ 
+.oculto {
+    display: none;
+}
+ 
+/* Pie de tarjeta */
+footer {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #d7dee7;
+ 
+    color: #68778a;
+    font-size: 13px;
+}
+ 
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 480px) {
+    .tarjeta {
+        padding: 18px;
+    }
+ 
+    .encabezado h1 {
+        font-size: 21px;
+    }
 }
